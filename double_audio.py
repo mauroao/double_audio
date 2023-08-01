@@ -35,7 +35,8 @@ extract_audio(file1, temp_audio1)
 
 # Subtract n seconds from temp_audio1 and save to temp_audio2
 temp_audio2 = 'temp_audio2.aac'
-truncate_audio(temp_audio1, temp_audio2, (duration1 - 15))
+trunc_seconds = 15
+truncate_audio(temp_audio1, temp_audio2, (duration1 - trunc_seconds))
 
 # Concatenate the audio file with itself to double the duration
 double_audio = 'double_audio.aac'
